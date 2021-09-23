@@ -35,3 +35,10 @@ func New(u *url.URL, authToken, observerID string) *Client {
 }
 
 
+func (c *Client) GetBaseURL() *url.URL{
+	return c.baseURL
+}
+
+func (c *Client) GetHttpClient() *http.Client{
+	return c.httpClient
+}
